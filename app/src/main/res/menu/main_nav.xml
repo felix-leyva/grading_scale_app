@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/ic_baseline_help_center_24"
+        app:showAsAction="always"
+        android:title="@string/help_menu" />
+
+
+    <item
+        android:id="@+id/action_add_grade"
+        android:orderInCategory="100"
+        android:title="@string/new_grade_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_add_grade_scale"
+        android:orderInCategory="100"
+        android:title="@string/new_grade_scale_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_modify_grade_scale_name"
+        android:orderInCategory="100"
+        android:title="@string/modify_grade_scale_name_setting"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/delete_grade_scale"
+        android:orderInCategory="100"
+        android:title="@string/delete_gs_setting"
+        app:showAsAction="never"/>
+
+
+
+</menu>

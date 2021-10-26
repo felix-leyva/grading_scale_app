@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/calculatorFragment">
+
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="de.felixlf.gradingscale.ui.calculator.CalculatorFragment"
+        android:label="@string/grade_calculator_fraglabel"
+        tools:layout="@layout/calculator_fragment">
+        <action
+            android:id="@+id/action_calculatorFragment_to_gradeScaleFragment"
+            app:destination="@id/list_grades" />
+        <action
+            android:id="@+id/action_calculatorFragment_to_weightedGradeCalcFragment2"
+            app:destination="@id/weighted_grade" />
+        <action
+            android:id="@+id/action_calculatorFragment_to_importRemoteFragment"
+            app:destination="@id/importRemote" />
+        <action
+            android:id="@+id/action_calculatorFragment_to_helpVideo"
+            app:destination="@id/helpVideo" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_gradeScaleFragment"
+        app:destination="@id/list_grades" />
+    <action
+        android:id="@+id/action_global_calculatorFragment"
+        app:destination="@id/calculatorFragment" />
+    <navigation
+        android:id="@+id/weighted_grade"
+        app:startDestination="@id/weightedGradeCalcFragment">
+        <dialog
+            android:id="@+id/WGradeAddModifyDialog"
+            android:name="de.felixlf.gradingscale.ui.weightedcalculator.dialogWGrade.WGradeAddModifyDialog"
+            android:label="@string/modify_single_grade_dialoglabel">
+            <argument
+                android:name="edit"
+                android:defaultValue="true"
+                app:argType="boolean" />
+            <action
+                android:id="@+id/action_WGradeAddModifyDialog_to_weightedGradeCalcFragment"
+                app:destination="@id/weightedGradeCalcFragment" />
+            <argument
+                android:name="id"
+                android:defaultValue='""'
+                app:argType="string" />
+        </dialog>
+        <fragment
+            android:id="@+id/weightedGradeCalcFragment"
+            android:name="de.felixlf.gradingscale.ui.weightedcalculator.WeightedGradeCalcFragment"
+            android:label="@string/weighted_grade_calculation_fraglabel"
+            tools:layout="@layout/weighted_grade_calc_fragment">
+            <action
+                android:id="@+id/action_weightedGradeCalcFragment2_to_calculatorFragment"
+                app:destination="@id/calculatorFragment" />
+            <action
+                android:id="@+id/action_weightedGradeCalcFragment_to_WGradeAddModifyDialog"
+                app:destination="@id/WGradeAddModifyDialog" />
+        </fragment>
+    </navigation>
+    <navigation
+        android:id="@+id/list_grades"
+        app:startDestination="@id/gradeScaleFragment">
+        <dialog
+            android:id="@+id/deleteYesNoDialog"
+            android:name="de.felixlf.gradingscale.ui.list.dialogs.DeleteYesNoDialog"
+            android:label="@string/delete_dialoglabel">
+            <action
+                android:id="@+id/action_deleteYesNoDialog_to_gradeScaleFragment"
+                app:destination="@id/gradeScaleFragment" />
+        </dialog>
+        <dialog
+            android:id="@+id/gradeModifyDialogFragment"
+            android:name="de.felixlf.gradingscale.ui.list.dialogs.GradeModifyDialogFragment"
+            android:label="@string/modify_single_grade_dialoglabel"
+            tools:layout="@layout/dialog_grade">
+            <action
+                android:id="@+id/action_gradeModifyDialogFragment_to_gradeScaleFragment"
+                app:destination="@id/gradeScaleFragment" />
+            <argument
+                android:name="UpdateGrade"
+                app:argType="boolean" />
+        </dialog>
+        <dialog
+            android:id="@+id/gradeScaleModFragment"
+            android:name="de.felixlf.gradingscale.ui.list.dialogs.GradeScaleModFragment"
+            android:label="@string/modify_gradescale_dialoglabel"
+            tools:layout="@layout/dialog_scale">
+            <action
+                android:id="@+id/action_gradeScaleModFragment_to_gradeScaleFragment"
+                app:destination="@id/gradeScaleFragment" />
+            <argument
+                android:name="modifyGradeScale"
+                android:defaultValue="true"
+                app:argType="boolean" />
+        </dialog>
+        <fragment
+            android:id="@+id/gradeScaleFragment"
+            android:name="de.felixlf.gradingscale.ui.list.GradeScaleFragment"
+            android:label="@string/grade_scale_list_fragmentlabel"
+            tools:layout="@layout/grade_scale_fragment">
+            <action
+                android:id="@+id/action_gradeScaleFragment_to_calculatorFragment"
+                app:destination="@id/calculatorFragment" />
+            <action
+                android:id="@+id/action_gradeScaleFragment_to_deleteYesNoDialog"
+                app:destination="@id/deleteYesNoDialog" />
+            <action
+                android:id="@+id/action_gradeScaleFragment_to_gradeModifyDialogFragment"
+                app:destination="@id/gradeModifyDialogFragment" />
+            <action
+                android:id="@+id/action_gradeScaleFragment_to_gradeScaleModFragment"
+                app:destination="@id/gradeScaleModFragment" />
+        </fragment>
+    </navigation>
+    <navigation
+        android:id="@+id/importRemote"
+        app:startDestination="@id/importRemoteFragment">
+        <fragment
+            android:id="@+id/importRemoteFragment"
+            android:name="de.felixlf.gradingscale.ui.importremote.ImportRemoteFragment"
+            android:label="@string/import_grade_scales_fragment_label"
+            tools:layout="@layout/import_remote_fragment" />
+    </navigation>
+
+    <fragment
+        android:id="@+id/helpVideo"
+        android:name="de.felixlf.gradingscale.ui.help.HelpVideo"
+        android:label="@string/instruction_videos"
+        tools:layout="@layout/fragment_help_video" >
+        <action
+            android:id="@+id/action_helpVideo_to_calculatorFragment"
+            app:destination="@id/calculatorFragment" />
+    </fragment>
+
+
+</navigation>

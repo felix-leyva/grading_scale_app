@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="grade">Nota</string>
+    <string name="note_hint_et">Agregar una nota</string>
+    <string name="total_points_et">Puntos totales</string>
+    <string name="total_points_hint">Agregar puntos totales</string>
+    <string name="points_hint">Agregar puntos</string>
+    <string name="points_et">Puntos</string>
+    <string name="percentage_et">Por\u200bcen\u200bta\u200bje</string>
+    <string name="percentage_hint">Agregar Porcentaje</string>
+    <string name="navigation_drawer_open">Abrir menu navegacion</string>
+    <string name="navigation_drawer_close">Abrir menu navegacion</string>
+    <string name="nav_header_subtitle">La App para el cálculo fácil de calificaciones</string>
+    <string name="nav_header_desc">Encabezado de navegación</string>
+    <string name="action_settings">Ajustes</string>
+
+    <string name="snack_bar_text">Nota borrada</string>
+    <string name="snack_bar_undo">UNDO / Deshacer</string>
+    <string name="last_grade_delete">No es posible borrar la última nota de la escala. Utilice la opción "borrar la escala".</string>
+    <string name="last_gradescale_delete">No es posible eliminar la última escala de calificaciones.</string>
+
+
+    <string name="grade_calculator_menu">Calculadora de calificación</string>
+    <string name="grade_scale_menu">Editar y crear escalas de notas</string>
+    <string name="grade_update">Actualizar nota</string>
+    <string name="dialog_named_grade1">Nombre nota</string>
+    <string name="dialog_percentage">Porcentaje</string>
+    <string name="dialog_named_grade2">Nombre de la nota</string>
+    <string name="dialog_cancel_response">No se hicieron cambios</string>
+    <string name="save_button">Guardar</string>
+    <string name="save_new_grade_button">Guardar nueva nota</string>
+    <string name="save_new_grade_scale_button">Guardar nueva escala de notas</string>
+    <string name="grade_updated_msg">Nota actualizada</string>
+    <string name="grade_name_col">Nombre de la nota</string>
+    <string name="percentage_col">Por\u200bcen\u200bta\u200bje %</string>
+    <string name="points_col">Puntos</string>
+    <string name="weight_col">Peso</string>
+    <string name="new_grade_settings">Agregar una nueva nota</string>
+    <string name="new_grade_details_toast">Añadir detalles de la nueva nota</string>
+    <string name="new_grade_scale_settings">Añadir una nueva escala de nota</string>
+    <string name="grade_scale">Escala de notas</string>
+    <string name="grade_scale_name_hint">Agregar nombre de la escala de nota</string>
+    <string name="delete_gs_setting">Borrar la escala de notas actual</string>
+    <string name="modify_grade_scale_name_setting">Modificar nombre de la escala de notas actual</string>
+    <string name="weighted_grade_calculator">Calculadora de notas ponderadas</string>
+    <string name="delete_grade_button">Borrar la nota</string>
+    <string name="total_grade_col">Nota total</string>
+    <string name="total_points_col">Total de puntos</string>
+    <string name="weighted_grade_calculation_fraglabel">Calculadora de notas ponderadas</string>
+    <string name="modify_single_grade_dialoglabel">Modificar nota</string>
+    <string name="grade_scale_list_fragmentlabel">Editar y crear escalas de notas</string>
+    <string name="grade_calculator_fraglabel">Calculadora calificación</string>
+    <string name="delete_dialoglabel">¿Borrar?</string>
+    <string name="modify_gradescale_dialoglabel">Modificar escala de notas</string>
+    <string name="get_grade_scales_from_internet">Importar escalas de notas</string>
+    <string name="country">Filtrar por país</string>
+    <string name="import_remote_header">País y nombre de escala de notas</string>
+    <string name="dialog_import">¿Importar la escala de notas seleccionada?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="import_grade_scales_fragment_label">Importar escala de notas</string>
+    <string name="delete_grade_scale_question">¿Está seguro de que desea eliminar esta escala de notas? La operación no puede ser revertida</string>
+    <string name="delete">Borrar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="submit_new_gradescale">"Si no encuentras tu escala de calificaciones de tu país o institución compártenosla enviándonos un correo a: gradingscaleapp@gmail.com "</string>
+    <string name="dialog_import_success">La escala de notas se importó correctamente</string>
+    <string name="dialog_import_fail">No se importó la escala de notas</string>
+    <string name="total_note">Nota global</string>
+    <string name="partial_grades">Notas parciales</string>
+    <string name="loading">Por favor espere: cargando</string>
+    <string name="error_loading">Se ha producido un error en la conexión con el servidor. Por favor, compruebe su conexión e inténtelo de nuevo</string>
+    <string name="instruction_videos">Videos de ayuda</string>
+    <string name="hello_blank_fragment">Videos de ayuda</string>
+    <string name="link_video_calculator">b4LPfxvS86Q</string>
+    <string name="link_video_editor">-etWlnViMkI</string>
+    <string name="link_video_w_calc">7PA8sr9hX0k</string>
+    <string name="link_video_import">k0ZzOfMA9sM</string>
+    <string name="help_menu">Videos de ayuda</string>
+
+</resources>

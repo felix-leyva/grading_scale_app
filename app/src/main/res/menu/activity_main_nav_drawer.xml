@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/calculatorFragment"
+            android:icon="@drawable/ic_baseline_calculate_24"
+            android:title="@string/grade_calculator_menu" />
+
+        <item
+            android:id="@+id/list_grades"
+            android:icon="@drawable/ic_baseline_list_alt_24"
+            android:title="@string/grade_scale_menu"
+            />
+
+        <item
+            android:id="@+id/weighted_grade"
+            android:icon="@drawable/ic_baseline_grading_24"
+            android:title="@string/weighted_grade_calculator" />
+
+        <item
+            android:id="@+id/importRemote"
+            android:icon="@drawable/ic_baseline_get_app_24"
+            android:title="@string/get_grade_scales_from_internet" />
+
+        <item
+            android:id="@+id/helpVideo"
+            android:icon="@drawable/ic_baseline_help_center_24"
+            android:title="@string/instruction_videos" />
+
+
+
+    </group>
+</menu>

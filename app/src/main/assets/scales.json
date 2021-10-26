@@ -1,0 +1,52 @@
+[
+  {
+    "namedGrade": "A1",
+    "percentage": 0.91,
+    "nameOfScale": "Ministerium2"
+  },
+  {
+    "namedGrade": "A2",
+    "percentage": 0.81,
+    "nameOfScale": "Ministerium2"
+  },
+  {
+    "namedGrade": "A3",
+    "percentage": 0.71,
+    "nameOfScale": "Ministerium2"
+  },
+  {
+    "namedGrade": "A4",
+    "percentage": 0.61,
+    "nameOfScale": "Ministerium2"
+  },
+  {
+    "namedGrade": "A5",
+    "percentage": 0.51,
+    "nameOfScale": "Ministerium2"
+  },
+  {
+    "namedGrade": "A6",
+    "percentage": 0.41,
+    "nameOfScale": "Ministerium2"
+  },
+  {
+    "namedGrade": "A7",
+    "percentage": 0.31,
+    "nameOfScale": "Ministerium2"
+  },
+  {
+    "namedGrade": "A8",
+    "percentage": 0.21,
+    "nameOfScale": "Ministerium2"
+  },
+  {
+    "namedGrade": "A9",
+    "percentage": 0.11,
+    "nameOfScale": "Ministerium2"
+  },
+  {
+    "namedGrade": "A10",
+    "percentage": 0.01,
+    "nameOfScale": "Ministerium2"
+  }
+]
